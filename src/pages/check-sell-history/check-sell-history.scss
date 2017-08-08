@@ -1,0 +1,155 @@
+@import '../../themes/_variable.scss';
+@import '../../themes/_basic.scss';
+
+.fix-bg{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background:$splitBg;
+}
+.sell-container{
+    position: relative;
+}
+.sell-history-wrap{
+
+}
+.sell-history-list{
+    background: $splitBg;
+}
+.sell-history-item{
+    position: relative;
+    background: #fff;
+    margin-bottom: 10px;
+    a{
+        display: block;
+    }
+}
+
+.sell-header-date{
+    padding:10px;
+    color:#666;
+    border-bottom: 1px solid $c_border;
+}
+.sell-content{
+    padding:10px;
+}
+.shop-avatar{
+    width:90px;
+    height: 90px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.shop-info{
+    padding-left:100px;
+    .shop-title{
+        @extend %ell;
+        font-size: 15px;
+        font-weight: 400;
+        height:30px;
+    }
+    .info-row{
+        line-height: 24px;
+        font-size: 13px;
+        color:#666;
+    }
+    b{
+        font-weight: 400;
+        @extend %mid;
+    }
+    span{
+        @extend %mid;
+    }
+}
+.sell-arrow-link{
+    position: absolute;
+    right:10px;
+    bottom: 23px;
+    color:#999;
+}
+
+
+
+
+
+
+.bottom-border {
+    border-bottom: 1px solid #f3f5f7;
+}
+
+.sh {
+    height: 40px;
+    line-height: 40px;
+}
+
+.spacing {
+    padding: 0 15px;
+}
+
+.st {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.history-info {
+    margin: 10px 0;
+}
+
+.history-info:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+// .history-icon,
+.history-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.history-text {
+    height: 20px;
+    margin-bottom: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.history-name {
+    margin-left: 90px;
+    position: relative;
+}
+
+.history-info-title {
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 21px;
+}
+
+.history-name i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #666;
+}
+
+.history-info—bottom {
+    background: #f3f5f7;
+    width: 100%;
+    height: 10px;
+}

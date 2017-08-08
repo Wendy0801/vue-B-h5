@@ -1,0 +1,78 @@
+
+@import '../../themes/_variable.scss' ;
+@import '../../themes/_basic.scss' ;
+
+.h5-in-wechat{
+    .smi-header{
+        display: block;
+    }
+    .smi-content{
+        padding-top:40px;
+    }
+}
+
+.shop-placeholder-bg {
+    background: $c_theme_main;
+    height: 120px;
+}
+.shop-center-main{
+    margin:0 20px ;
+    background:#fff;
+    transform:translate3d(0,-50%,0);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+.center-nav-item{
+    width: 50%;
+    // height:160px;
+    padding:36px 0;
+    text-align: center;
+    color:$c_theme_main;
+    
+    i{
+        width:50px;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        font-size: 40px;
+    }
+    h5{
+        margin-top:8px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+.setting-wrap{
+    position: absolute;
+    right: 6px;
+    top:40px;
+    background: #fff;
+    border-radius: 4px;
+    color:#333;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    &:after{
+        content: '';
+        position: absolute;
+        right:10px;
+        top:-8px;
+        border-left:5px solid transparent;
+        border-right:5px solid transparent;
+        border-bottom:10px solid #fff;
+    }
+    .setting-item{
+        border-bottom: 1px solid $c_border;
+        padding:0 10px;
+    }
+
+}
+
+.setting-item-container{
+    i{
+        @extend %mid;
+    }
+    span{
+        @extend %mid;
+    }
+}
